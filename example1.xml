@@ -1,43 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<EventGhost Version="1694" Guid="{747B3C61-EC7D-4235-89E4-C6E18782C2CC}" Time="1424799645.05">
-    <Autostart Name="Autostart" Expanded="True">
-        <Plugin Identifier="BroadcastListener" Guid="{5E8DA56B-24AC-4092-9521-169343C5171C}" File="Broadcaster">
-            gAIoWAkAAABCcm9hZGNhc3RxAFgPAAAAMjU1LjI1NS4yNTUuMjU1cQFNNYKJWAIAAAAmJnECVQsxOTIuMTY4LjIuMnEDdHEELg==
-        </Plugin>
+<EventGhost Version="1694" Guid="{C148A22C-6D08-4B2C-B443-04EA3860DB99}" Time="1424885886.2">
+    <Autostart Name="Autostart">
         <Plugin Identifier="VoiceRecognition" Guid="VoiceRecognition" File="VoiceRecognition">
-            gAIoWJ4AAABSb2dlcixSb2dlciBwbGF5IG1vdmllLFJvZ2VyIHBhdXNlIG1vdmllLFJvZ2VyIHN0b3AgbW92aWUsUm9nZXIgcGxheSB2aWRlbyxSb2dlciBwYXVzZSB2aWRlbyxSb2dlciBzdG9wIHZpZGVvLFJvZ2VyIHBsYXkgc2hvdyxSb2dlciBwYXVzZSBzaG93LFJvZ2VyIHN0b3Agc2hvd3EAS1pYMQAAAFJvZ2VyIHN0YXJ0IGhvbWUgdGhlYXRyZSxSb2dlciBjbG9zZSBob21lIHRoZWF0cmVxAUtQWEoCAABhZ2FpbixiZXN0LGNhdCxkcmFpbixlZGdlLGZvcmVpZ24sZ3JlYXQsaG93LGltYWdpbmUsanVtcCxraXRlLGxhbXAsbWFuLG5hdWdodCxvcmRlcixxdWljayxyZWJvb3Qsc29sZSx0ZW4sdW5jbGUsdmVsb2NpdHkseWVsbG93LHJvZ2VyLG5vdGVwYWQsY29tbWFuZCxzeXN0ZW0saGVscCxsb2NrLHNodXRkb3duLHJlYm9vdCxjYW5jZWwsc2F2ZSxBcmUgeW91IG9rYXksQmUgY2FyZWZ1bCxEbyB5b3UgZmVlbCBiZXR0ZXIsZXZlcnlkYXksZm9sbG93IG1lLEdpdmUgbWUgYSBjYWxsLEhhdmUgYSBnb29kIHRyaXAsSSBEb250IENhcmUsSnVzdCBhIGxpdHRsZSxMZXRzIGdvLE15IHNvbixObyBQcm9ibGVtLG92ZXIgaGVyZSxQbGVhc2Ugc2l0IGRvd24sUmlnaHQgaGVyZSxTZWUgeW91IGxhdGVyLFRoYW5rIHlvdSxWZXJ5IGdvb2QsV2hhdCBhcmUgeW91IGRvaW5nLHllcyB5b3UgbG9vayB0aXJlZCxwbGF5IG1vdmllLHBhdXNlIG1vdmllcyxzdG9wIG1vdmllLHBsYXkgdmlkZW8scGF1c2UgdmlkZW8sc3RvcCB2aWRlbyxwbGF5IHNob3cscGF1c2Ugc2hvdyxzdG9wIHNob3csc3RhcnQgaG9tZSB0aGVhdHJlLHN0b3AgaG9tZSB0aGVhdHJlcQKIdHEDLg==
+            gAIoWEIAAAByb2dlcixub3RlcGFkLGNvbW1hbmQsc3lzdGVtLGhlbHAsbG9jayxzaHV0ZG93bixyZWJvb3QsY2FuY2VsLHNhdmVxAEtaWDUAAAByb2dlciBwbGF5IG1vdmllLHJvZ2VyIHN0b3AgbW92aWUscm9nZXIgc3RhcnQgbm90ZXBhZHEBS1BYgAEAAGFnYWluLGJlc3QsY2F0LGRyYWluLGVkZ2UsZm9yZWlnbixncmVhdCxob3csaW1hZ2luZSxqdW1wLGtpdGUsbGFtcCxtYW4sbmF1Z2h0LG9yZGVyLHF1aWNrLHJlYm9vdCxzb2xlLHRlbix1bmNsZSx2ZWxvY2l0eSx5ZWxsb3csQXJlIHlvdSBva2F5LEJlIGNhcmVmdWwsRG8geW91IGZlZWwgYmV0dGVyLGV2ZXJ5ZGF5LGZvbGxvdyBtZSxHaXZlIG1lIGEgY2FsbCxIYXZlIGEgZ29vZCB0cmlwLEkgRG9uJ3QgQ2FyZSxKdXN0IGEgbGl0dGxlLExldCdzIGdvLE15IHNvbixObyBQcm9ibGVtLG92ZXIgaGVyZSxQbGVhc2Ugc2l0IGRvd24sUmlnaHQgaGVyZSxTZWUgeW91IGxhdGVyLFRoYW5rIHlvdSxWZXJ5IGdvb2QsV2hhdCBhcmUgeW91IGRvaW5nLHllcyB5b3UgbG9vayB0aXJlZHECiXRxAy4=
         </Plugin>
     </Autostart>
-    <Folder Name="Voice Recognition" Expanded="True">
-        <Macro Name="Broadcaster: Play/Pause" Expanded="True">
-            <Event Name="VoiceRecognition.Roger play movie" />
-            <Event Name="VoiceRecognition.Roger pause movie" />
-            <Event Name="VoiceRecognition.Roger play video" />
-            <Event Name="VoiceRecognition.Roger pause video" />
-            <Event Name="VoiceRecognition.Roger play show" />
-            <Event Name="VoiceRecognition.Roger pause show" />
+    <Folder Name="Commands" Expanded="True">
+        <Macro Name="Emulate Keystrokes: {MediaPlayPause}" Expanded="True">
+            <Event Name="VoiceRecognition.roger play movie" />
             <Action>
-                BroadcastListener.Broadcast(u'PlayPause', u'', 33333)
+                Window.SendKeys(u'{MediaPlayPause}', False)
             </Action>
         </Macro>
-        <Macro Name="Broadcaster: Broadcast: Stop" Expanded="True">
-            <Event Name="VoiceRecognition.Roger stop show" />
-            <Event Name="VoiceRecognition.Roger stop movie" />
-            <Event Name="VoiceRecognition.Roger stop video" />
+        <Macro Name="Start Program: notepad.exe" Expanded="True">
+            <Event Name="VoiceRecognition.roger start notepad" />
             <Action>
-                BroadcastListener.Broadcast(u'Stop', u'', 33333)
-            </Action>
-        </Macro>
-        <Macro Name="Broadcaster: Broadcast: Start XBMC" Expanded="True">
-            <Event Name="VoiceRecognition.Roger start home theatre" />
-            <Action>
-                BroadcastListener.Broadcast(u'Start XBMC', u'', 33333)
-            </Action>
-        </Macro>
-        <Macro Name="Broadcaster: Broadcast: Close XBMC" Expanded="True">
-            <Event Name="VoiceRecognition.Roger close home theatre" />
-            <Action>
-                BroadcastListener.Broadcast(u'Close XBMC', u'', 33333)
+                System.Execute(u'notepad.exe', u'', 0, False, 2, u'', False, False, u'', False, False, False)
             </Action>
         </Macro>
     </Folder>

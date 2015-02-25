@@ -46,18 +46,18 @@ class VoiceRecognition(eg.PluginBase):
             self.counter += 1
             if phrase in wordList1:
                         if engineConfidence*100 >= level1 and actualConfidence>= 0:
-                                    print phrase + " "+ str(engineConfidence) + " " + str(actualConfidence)
+                                    print phrase + " "+ str(engineConfidence*100) 
                                     self.TriggerEvent(phrase)
                         else:
                                     if logging:
-										print phrase + " "+ str(engineConfidence) + " " + str(actualConfidence)
+										print phrase + " "+ str(engineConfidence*100) 
             elif phrase in wordList2:
                         if engineConfidence*100 >= level2 and actualConfidence>= 0:
-                                    print phrase + " "+ str(engineConfidence) + " " + str(actualConfidence)
+                                    print phrase + " "+ str(engineConfidence*100) 
                                     self.TriggerEvent(phrase)
                         else:
                                     if logging:
-										print phrase + " "+ str(engineConfidence) + " " + str(actualConfidence)			
+										print phrase + " "+ str(engineConfidence*100) 
             Thread(target=followUp, args=(self,)).start()
             
         speech.listenfor(self.wordList,callback)
