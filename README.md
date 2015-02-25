@@ -17,21 +17,22 @@ If your microphone is not ready for windows to use, the plugin will fail to init
 ## Installation instructions
 
 1. Install Event Ghost if you haven't already.
-2. Install the MS Speech Platform SDK for your appropriate OS - http://www.microsoft.com/en-us/download/details.aspx?id=27226 
-3. Download the plugin by using git's "Download as Zip" feature.
-4. Extract zip to your \<Event Ghost Install Dir>\plugins folder. 
+2. Download the plugin by using git's "Download as Zip" feature.
+3. Extract zip to your \<Event Ghost Install Dir>\plugins folder. 
+4. Edit the name of the folder from VoiceRecognition-master to just VoiceRecognition
 5. Launch Event Ghost and add the plugin
 
 ## Setup and Tips:
 1. When adding words to the configuration, make sure there are no spaces before each phrase
-
 2. I have provided two example eventghost trees. The first one is pretty straight forward
 The second one is the example that came with Maikhorma's plugin. It makes use of first identifying a prefix. It may provide better accuracy but in my experience it was much slower
-
 3. The plugin has a 'logging' option that will log out each recognized phrase and what the Speech Engine believes the confidence level is. This should help you determine what confidence levels to use.
+4. Go through the Microsoft speech recognition training. You can also add words and phrases to the microsoft voice recognition engine. 
 
-4. Go through the Microsoft speach recognition training. You can also add words and phrases to the microsoft voice recognition engine. 
-
+## Microphones:
+- I find the best results from the non-usb analog microphones. Personally, I bought a 3-pack of these and using an audio-splitter cable spread these around my living room (http://www.amazon.com/gp/product/B005DJOI8I/) - they are cheep and get the job done.
+- Also once you have setup your microphone, if it's an analog microphone you can setup realtek drivers, go into the audio settings in windows and turn on Noise Suppression and Acoustic Echo Cancellation. Play around with the level and boost of the microphone.
+- Again going through Microsoft's speech recognition training was very useful.
 
 # Credits
 * [Simonsays](https://code.google.com/p/simonsays/) - Whoever wrote this script proved to me that it "shouldn't be that hard" so I finally dug in and gave it a try.
