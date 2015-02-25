@@ -24,10 +24,13 @@ If your microphone is not ready for windows to use, the plugin will fail to init
 
 ## Setup and Tips:
 1. When adding words to the configuration, make sure there are no spaces before each phrase
-2. I have provided two example eventghost trees. The first one is pretty straight forward
+2. Make sure that the phrases or words you intend to use are not in your 'filler' word list
+3. Make sure the word or phrases used as events match what you enter into the configuration including the case of the word or phrase
+4. I have provided two example eventghost trees. The first one is pretty straight forward
 The second one is the example that came with Maikhorma's plugin. It makes use of first identifying a prefix. It may provide better accuracy but in my experience it was much slower
-3. The plugin has a 'logging' option that will log out each recognized phrase and what the Speech Engine believes the confidence level is. This should help you determine what confidence levels to use.
-4. Go through the Microsoft speech recognition training. You can also add words and phrases to the microsoft voice recognition engine. 
+5. The plugin has a 'logging' option that will log out each recognized phrase and what the Speech Engine believes the confidence level is. This should help you determine what confidence levels to use.
+6. You can add words or phrases to the filler words section. These are false positive words to help eliminate commonly spoken but not used words in eventghost. Make sure that any words or phrases you intend to use as events are not part of the filler words
+7. Go through the Microsoft speech recognition training. You can also add words and phrases to the microsoft voice recognition engine. 
 
 ## Microphones:
 - I find the best results from the non-usb analog microphones. Personally, I bought a 3-pack of these and using an audio-splitter cable spread these around my living room (http://www.amazon.com/gp/product/B005DJOI8I/) - they are cheep and get the job done.
