@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EventGhost Version="1694" Guid="{17E9AF41-E591-4D3A-A078-C3C25DA91B0E}" Time="1424799708.17">
+    <Autostart Name="Autostart" Expanded="True">
+        <Plugin Identifier="BroadcastListener" Guid="{5E8DA56B-24AC-4092-9521-169343C5171C}" File="Broadcaster">
+            gAIoWAkAAABCcm9hZGNhc3RxAFgPAAAAMjU1LjI1NS4yNTUuMjU1cQFNNYKJWAIAAAAmJnECVQsxOTIuMTY4LjIuMnEDdHEELg==
+        </Plugin>
+        <Plugin Identifier="VoiceRecognition" Guid="VoiceRecognition" File="VoiceRecognition">
+            gAIoWJgAAABDbGFyYSBwbGF5IG1vdmllLENsYXJhIHBhdXNlIG1vdmllLENsYXJhIHN0b3AgbW92aWUsQ2xhcmEgcGxheSB2aWRlbyxDbGFyYSBwYXVzZSB2aWRlbyxDbGFyYSBzdG9wIHZpZGVvLENsYXJhIHBsYXkgc2hvdyxDbGFyYSBwYXVzZSBzaG93LENsYXJhIHN0b3Agc2hvd3EAS1pYbQAAAENsYXJhIHN0YXJ0IGhvbWUgdGhlYXRyZSxDbGFyYSBjbG9zZSBob21lIHRoZWF0cmUsQ2xhcmEgc3RhcnQgeW91IHR1YmUsQ2xhcmEgY2xvc2UgeW91IHR1YmUsQ2xhcmEgc3RhcnQgc3RlYW1xAUtOWFICAABhZ2FpbixiZXN0LGNhdCxkcmFpbixlZGdlLGZvcmVpZ24sZ3JlYXQsaG93LGltYWdpbmUsanVtcCxraXRlLGxhbXAsbWFuLG5hdWdodCxvcmRlcixxdWljayxyZWJvb3Qsc29sZSx0ZW4sdW5jbGUsdmVsb2NpdHkseWVsbG93LHJvZ2VyLG5vdGVwYWQsY29tbWFuZCxzeXN0ZW0saGVscCxsb2NrLHNodXRkb3duLHJlYm9vdCxjYW5jZWwsc2F2ZSxBcmUgeW91IG9rYXksQmUgY2FyZWZ1bCxEbyB5b3UgZmVlbCBiZXR0ZXIsZXZlcnlkYXksZm9sbG93IG1lLEdpdmUgbWUgYSBjYWxsLEhhdmUgYSBnb29kIHRyaXAsSSBEb24ndCBDYXJlLEp1c3QgYSBsaXR0bGUsTGV0J3MgZ28sTXkgc29uLE5vIFByb2JsZW0sb3ZlciBoZXJlLFBsZWFzZSBzaXQgZG93bixSaWdodCBoZXJlLFNlZSB5b3UgbGF0ZXIsVGhhbmsgeW91LFZlcnkgZ29vZCxXaGF0IGFyZSB5b3UgZG9pbmcseWVzIHlvdSBsb29rIHRpcmVkLENsYXJhLHBsYXkgbW92aWUscGF1c2UgbW92aWVzLHN0b3AgbW92aWUscGxheSB2aWRlbyxwYXVzZSB2aWRlbyxzdG9wIHZpZGVvLHBsYXkgc2hvdyxwYXVzZSBzaG93LHN0b3Agc2hvdyxzdGFydCBob21lIHRoZWF0cmUsc3RvcCBob21lIHRoZWF0cmVxAol0cQMu
+        </Plugin>
+    </Autostart>
+    <Folder Name="Voice Recognition" Expanded="True">
+        <Folder Name="Commands" id="6" Expanded="True">
+            <Macro Name="Broadcaster: Play/Pause" Expanded="True">
+                <Event Name="VoiceRecognition.play movie" />
+                <Event Name="VoiceRecognition.pause movie" />
+                <Event Name="VoiceRecognition.play video" />
+                <Event Name="VoiceRecognition.pause video" />
+                <Event Name="VoiceRecognition.play show" />
+                <Event Name="VoiceRecognition.pause show" />
+                <Action>
+                    BroadcastListener.Broadcast(u'PlayPause', u'', 33333)
+                </Action>
+            </Macro>
+            <Macro Name="Broadcaster: Broadcast: Stop" Expanded="True">
+                <Event Name="SpeakEasy.stop movie" />
+                <Event Name="SpeakEasy.stop video" />
+                <Event Name="VoiceRecognition.stop show" />
+                <Action>
+                    BroadcastListener.Broadcast(u'Stop', u'', 33333)
+                </Action>
+            </Macro>
+            <Macro Name="Broadcaster: Broadcast: Start XBMC" Expanded="True">
+                <Event Name="VoiceRecognition.start home theatre" />
+                <Action>
+                    BroadcastListener.Broadcast(u'Start XBMC', u'', 33333)
+                </Action>
+            </Macro>
+            <Macro Name="Broadcaster: Broadcast: Close XBMC" Expanded="True">
+                <Event Name="VoiceRecognition.close home theatre" />
+                <Action>
+                    BroadcastListener.Broadcast(u'Close XBMC', u'', 33333)
+                </Action>
+            </Macro>
+        </Folder>
+        <Macro Name="Enable: Commands" Expanded="True">
+            <Event Name="VoiceRecognition.Clara" />
+            <Action>
+                EventGhost.EnableItem(XmlIdLink(6))
+            </Action>
+        </Macro>
+        <Macro Name="Disable: Commands" Expanded="True">
+            <Event Name="VoiceRecognition.DIE" />
+            <Action>
+                EventGhost.DisableItem(XmlIdLink(6))
+            </Action>
+        </Macro>
+    </Folder>
+</EventGhost>
